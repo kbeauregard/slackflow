@@ -1,5 +1,4 @@
-
-name: auto-format
+name: blacken-code
 on: pull_request
 jobs:
   format:
