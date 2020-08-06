@@ -9,7 +9,7 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setuptools.setup(
     name="slackflow",
-    version="0.0.4",
+    version="1.0.0",
     author="Kyle Beauregard",
     author_email="kylembeauregard@gmail.com",
     description="Slack notifications for airflow dags.",
@@ -25,5 +25,5 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
     ],
-    install_requires=["requests>=2.23.0", "slackclient>=2.7.2", "pymongo==3.9.0"],
+    install_requires=["requests==2.23.0", "slackclient==2.7.2", "pymongo==3.9.0"],
 )

@@ -18,7 +18,34 @@ AIRFLOW_HOST=<host> SLACK_TOKEN=<your_token> SLACK_CHANNEL=<channel_id> slackflo
 
 #### Setup
 
+[Pip-tools](https://github.com/jazzband/pip-tools) is used to manage dependencies.
+
 ```
-pip install -r requirements
+pip install pip-tools
+pip-sync requirements.txt dev-requirements.txt
+```
+
+#### Codestyle and Linting
+
+This project uses [Black](https://github.com/psf/black) to auto format code using [pre-commit](https://github.com/pre-commit/pre-commit) to enforce format before committing. [Flake8](https://gitlab.com/pycqa/flake8) is used for linting.
+```
 pre-commit install
 ```
+
+#### Changing Requirements
+
+production
+1. update `setup.py`
+2. run `pip-compile`
+
+development
+1. update `dev-requirements.in`
+2. run `pip-compile dev-requirements.in`
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
