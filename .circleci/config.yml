@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  black:
+    docker:
+      - image: python:3.7.5-stretch
+    steps:
+      - type: checkout
+
+      - type: shell
+        command: pip3 install black
+
+      - type: shell
+        shell: /bin/bash
+        command: black --check .
+
+  flake8:
+    docker:
+      - image: python:3.7.5-stretch
+    steps:
+      - type: checkout
+
+      - type: shell
+        command: pip3 install flake8
+
+      - type: shell
+        shell: /bin/bash
+        command: flake8
+
+workflows:
+  version: 2
+  test_deploy:
+    jobs:
+      - black
+      - flake8
