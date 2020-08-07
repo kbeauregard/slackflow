@@ -18,7 +18,7 @@ def run_service():
 
             for dag in dags:
                 dag_runs = get_dag_run_status(dag["dag_id"])
-                for run in dag_runs[-1 * min(len(dag_runs), 10) :]:
+                for run in dag_runs[-1 * min(len(dag_runs), 10) :]:  # noqa E203
                     try:
                         create_dag_run(
                             run["dag_id"],
