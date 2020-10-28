@@ -13,4 +13,4 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: kyle.beauregard@numerator.com
+  owner: group:personal
