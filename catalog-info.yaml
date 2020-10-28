@@ -6,6 +6,7 @@ metadata:
   labels:
     privacy: public
   annotations:
+    backstage.io/techdocs-ref: dir:./
     circleci.com/project-slug: github/kbeauregard/slackflow
   tags:
     - python
