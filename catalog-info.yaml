@@ -10,6 +10,6 @@ metadata:
   tags:
     - python
 spec:
-  type: application
+  type: service
   lifecycle: production
   owner: kylembeauregard@gmail.com
