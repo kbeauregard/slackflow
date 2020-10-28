@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: slackflow
+  description: Airflow notifications in Slack
+  labels:
+    privacy: public
+  annotations:
+    circleci.com/project-slug: github/kbeauregard/slackflow
+  tags:
+    - python
+spec:
+  type: application
+  lifecycle: production
+  owner: kylembeauregard@gmail.com
