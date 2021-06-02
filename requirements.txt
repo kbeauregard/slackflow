@@ -15,5 +15,5 @@ pymongo==3.9.0            # via slackflow (setup.py)
 requests==2.23.0          # via slackflow (setup.py)
 slackclient==2.7.2        # via slackflow (setup.py)
 typing-extensions==3.7.4.2  # via yarl
-urllib3==1.25.10          # via requests
+urllib3==1.26.5          # via requests
 yarl==1.5.1               # via aiohttp
