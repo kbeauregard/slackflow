@@ -25,5 +25,5 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
     ],
-    install_requires=["requests==2.23.0", "slackclient==2.7.2", "pymongo==3.9.0"],
+    install_requires=["requests==2.32.4", "slackclient==2.7.2", "pymongo==3.9.0"],
 )

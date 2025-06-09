@@ -12,7 +12,7 @@ chardet==3.0.4            # via aiohttp, requests
 idna==2.10                # via requests, yarl
 multidict==4.7.6          # via aiohttp, yarl
 pymongo==3.9.0            # via slackflow (setup.py)
-requests==2.23.0          # via slackflow (setup.py)
+requests==2.32.4          # via slackflow (setup.py)
 slackclient==2.7.2        # via slackflow (setup.py)
 typing-extensions==3.7.4.2  # via yarl
 urllib3==1.25.10          # via requests
